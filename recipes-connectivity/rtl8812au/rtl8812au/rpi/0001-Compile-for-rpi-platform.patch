@@ -1,0 +1,33 @@
+From afb86057efbc3b4954d3499372f20e4c2d299b85 Mon Sep 17 00:00:00 2001
+From: Andrei Gherzan <andrei@resin.io>
+Date: Mon, 1 Aug 2016 23:41:31 +0200
+Subject: [PATCH 1/2] Compile for rpi platform
+
+Signed-off-by: Andrei Gherzan <andrei@resin.io>
+---
+ Makefile | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 70c609a..b71cdec 100644
+--- a/Makefile
++++ b/Makefile
+@@ -50,13 +50,13 @@ CONFIG_EXT_CLK = n
+ CONFIG_FTP_PROTECT = n
+ CONFIG_WOWLAN = n
+ 
+-CONFIG_PLATFORM_I386_PC = y
++CONFIG_PLATFORM_I386_PC = n
+ CONFIG_PLATFORM_ANDROID_X86 = n
+ CONFIG_PLATFORM_JB_X86 = n
+ CONFIG_PLATFORM_ARM_S3C2K4 = n
+ CONFIG_PLATFORM_ARM_PXA2XX = n
+ CONFIG_PLATFORM_ARM_S3C6K4 = n
+-CONFIG_PLATFORM_ARM_RPI = n
++CONFIG_PLATFORM_ARM_RPI = y
+ CONFIG_PLATFORM_MIPS_RMI = n
+ CONFIG_PLATFORM_RTD2880B = n
+ CONFIG_PLATFORM_MIPS_AR9132 = n
+-- 
+2.1.4
+
